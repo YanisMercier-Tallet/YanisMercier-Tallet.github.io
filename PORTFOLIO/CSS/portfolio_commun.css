@@ -74,12 +74,6 @@ h1,h2,h3,h4{
         width:944px;
         height: 590px;
     }
-    .imgPong{
-        display: none;
-    }
-    .responsiveRetex{
-        display:inline;
-    }
 
     .contenuRESPONSIVE{
         display: none;
@@ -89,21 +83,12 @@ h1,h2,h3,h4{
 
 /* Adaptation sur smartphone */
 @media screen and (width<880px){
-    .responsiveRetex{
-        display: none;
-    }
     embed{
         width:280px;
         height:175px;
-
-        /*display: none;*/
     }   
 
     .liToHide{
-        display: none;
-    }
-
-    .imgPong{
         display: none;
     }
 
