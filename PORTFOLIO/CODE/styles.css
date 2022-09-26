@@ -78,7 +78,7 @@ span{
 }
 
 .images{
-    width: 45%;
+    width: 30%;
     height: 80%;
     position: absolute;
     bottom: 0;
@@ -139,7 +139,7 @@ span{
 
 .imagesPortfolio{
     min-width: 60px;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
     transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
     overflow: hidden;
@@ -209,8 +209,8 @@ button{
 
 button::after{
     content: "";
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
     position: absolute;
     top: -50px;
