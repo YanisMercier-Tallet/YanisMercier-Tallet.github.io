@@ -209,7 +209,7 @@ button{
 
 button::after{
     content: "";
-    width: 550px;
+    width: 150px;
     height: 550px;
     background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
     position: absolute;
