@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Mochiy+Pop+P+One&family=Source+Code+Pro&family=Ubuntu+Condensed&display=swap');
+@font-face {
+    font-family: 'Fjalla One', sans-serif;
+    src: 'https://fonts.googleapis.com/css2?family=Fjalla+One';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #212121;
+}
+
+nav{
+   display: flex;
+   width: 84%;
+   margin: auto;
+   padding: 20px 0;
+   align-items: center;
+   justify-content: right; 
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #eff4fd;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:goldenrod;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.detel h1{
+    font-family:'Fjalla One';
+    font-size: 50px;
+    color: #eff4fd;
+    margin-bottom: 20px;
+}
+
+span{
+    font-family:'Fjalla One';
+    color: #0d6efd;
+}
+
+.detel p{
+    font-size: 25px;
+    font-family:'Fjalla One';
+    color:#fff;
+    line-height: 28px;
+}
+
+.detel a{
+    background: #fff;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#212121;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .boy{
+    left: 45%;
+}
+
+.contact {
+    font-size: 25px;
+    font-family:'Fjalla One';
+    color:#fff;
+    line-height: 28px;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.mesEtudes {
+    font-size: 25px;
+    font-family:'Fjalla One';
+    color:#fff;
+    line-height: 50px;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+#phraseIntro{
+    font-size: 30px;
+    font-family:'Fjalla One';
+    color:#fff;
+    line-height: 40px;
+    margin-left: 6%;
+    margin-top: 7%;
+}
+
+.portfolio{
+    display: flex;
+    min-width: 600px;
+    max-width: 1800px;
+    height: 740px;
+    margin: 4rem auto;    
+}
+
+.imagesPortfolio{
+    min-width: 60px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    overflow: hidden;
+    position: relative;
+}
+
+.imagesPortfolio.active{
+    flex-grow: 100;
+    max-width: 300px;
+    max-width: 1200px;
+    margin: 0px;
+    border-radius: 7px;
+    background-size: auto 100%;
+    cursor: default;
+}
+
+.imagesPortfolio:not(.active){
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.text-container{
+    width:100%;
+    height: 100%;
+    padding: 2rem;
+    visibility: hidden;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all .4s ease;
+    background: linear-gradient(354deg, black 0%, transparent 72%);
+    
+    color:#fff;
+    overflow: hidden;
+}
+
+.text{
+    position: absolute;
+    bottom: 5rem;
+}
+
+.active .text-container{
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.text p{
+    font-family:'Fjalla One';
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+button{
+    margin-left: 10px;
+    border: 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 25px;
+    border-radius: 40px;
+    cursor:pointer;
+    font-size: 1.5em;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, 0.5), 0px 0px 0px 0px rgba(39,200,255,0.5);
+    transition:all .2s;
+}
+
+button::after{
+    content: "";
+    width: 550px;
+    height: 550px;
+    background: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: all .5s;
+}
+
+button:hover::after{
+    transform: rotate(150deg);
+}
+
+button:hover{
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
